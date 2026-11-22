@@ -1,0 +1,61 @@
+body {
+    background-color: #e8eef7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+#cartao {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#entrada {
+    display: flex;
+    gap: 10px;
+}
+
+#campo {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#adicionar {
+    padding: 10px 16px;
+    background-color: #4a7bd0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#adicionar:hover {
+    background-color: #3562b0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f6fa;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+li:hover {
+    background-color: #e3e9f5;
+}

@@ -4,15 +4,25 @@ const adicionar= document.getElementById("adicionar")
 
 
 let tarefas=[];
+
 function mostrarTarefas(){
+    
     lista.innerHTML=""; //limpa lista na tela
 
-    tarefas.forEach(function (tarefa){
+      tarefas.forEach(function (tarefa){
 
-      const adicionarlista=document.createElement("lista")
+        const li=document.createElement("li")
 
-      adicionarlista="";
-      lista.appendChild(adicionarlista);
+        li.textContent=tarefa
+        lista.appendChild(li);
 
-    });
+      });
 }
+adicionar.addEventListener("click",function(){
+
+   let texto=campo.value;
+   tarefas.push(texto);
+   campo.value=""
+   mostrarTarefas();
+    
+});
