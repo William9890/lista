@@ -18,11 +18,14 @@ function mostrarTarefas(){
 
       });
 }
-adicionar.addEventListener("click",function(){
+adicionar.addEventListener("click", function () {
+    let texto = campo.value.trim();
 
-   let texto=campo.value;
-   tarefas.push(texto);
-   campo.value=""
-   mostrarTarefas();
-    
+    if (texto === "") {
+        return;
+    }
+
+    tarefas.push(texto);
+    campo.value = "";
+    mostrarTarefas();
 });
